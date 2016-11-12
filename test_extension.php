@@ -4,9 +4,15 @@ use Utils\Greeting;
 
 $start = microtime(true);
 
-$array = range(1, 10000);
-for ($i = 0; $i < 10000; $i++) {
-    $v = Greeting::inArray(100, $array);
+$array = [];
+for ($i = 0; $i < 100; $i++) {
+    $array[] = random_bytes(100);
 }
 
-echo microtime(true) - $start;
+//foreach ($array as $value) {
+//    echo $value;
+//}
+
+Greeting::array_echo($array);
+
+echo PHP_EOL . PHP_EOL . microtime(true) - $start;

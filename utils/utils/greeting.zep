@@ -26,4 +26,17 @@ class Greeting
     {
         return in_array(needle, arr);
     }
+
+    public static function arr_reverse(array arr)
+    {
+        return arr->reversed();
+    }
+
+    public static function array_echo(array arr)
+    {
+        var value;
+        for value in arr {
+            echo value;
+        }
+    }
 }
