@@ -5,7 +5,7 @@ use Utils\Greeting;
 $start = microtime(true);
 
 $array = [];
-for ($i = 0; $i < 100; $i++) {
+for ($i = 0; $i < 10000; $i++) {
     $array[] = random_bytes(100);
 }
 
